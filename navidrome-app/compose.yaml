@@ -10,4 +10,4 @@ services:
       # ND_LOGLEVEL: debug
     volumes:
       - "./data:/data"
-      - "/home/jack/Music:/music:ro"
+      - "/mnt/Music:/music:ro"
