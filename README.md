@@ -9,5 +9,4 @@ A collection of my docker-compose files for my homelab self-hosted services. Cur
 * [Immich](https://github.com/immich-app/immich) (Server + ML container + Redis + Database)
 * [Navidrome](https://github.com/navidrome/navidrome)
 * [Plex](https://github.com/linuxserver/docker-plex) (Using the linuxserver Docker version)
-* [Speedtest](https://github.com/librespeed/speedtest)
 
