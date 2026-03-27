@@ -1,0 +1,16 @@
+# docker-compose.yml for Nginx Proxy Manager
+version: '3.8'
+services:
+  npm-app:
+    image: 'jc21/nginx-proxy-manager:latest'
+    container_name: nginx-proxy-manager
+    restart: unless-stopped
+    ports:
+      # These ports are the public-facing ports.
+      - '80:80'   # Public HTTP Port
+      - '443:443' # Public HTTPS Port
+      - '81:81'   # Admin Web UI Port
+    volumes:
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt
+
