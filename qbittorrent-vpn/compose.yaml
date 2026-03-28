@@ -36,6 +36,8 @@ services:
       - WEBUI_PORT=${QBITTORRENT_WEBUI_PORT}
     volumes:
       - ./config:/config
-      - ${PATH_MEDIA}:/downloads
+      - ${PATH_MOVIES}:/movies
+      - ${PATH_TV}:/tv
+      - ${PATH_MUSIC}:/music
     network_mode: "service:protonvpn"
     restart: unless-stopped
